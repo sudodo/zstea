@@ -3,11 +3,14 @@
       <div>
         <h3 id="news_letter">ZeroStruct News Letter</h3>
       </div>
+        <p>
+        ゼロストラクトの最新情報はニュースレターでお届けします.
+        </p>
       <div class="input-prepend">
       <span class="add-on" style="color:black;">
         <i class="icon-envelope"></i>
       </span>
-        <%= f.text_field :email, :class => 'text_field', :placeholder => "your-address@email.com" %>
+        <%= f.text_field :email, :class => 'text_field', :placeholder => "your-address@email.com", :style => "width:400px" %>
       </div>
       <%= f.submit nil, :class => 'btn btn-warning', :value =>'Subscribe' %>
   </div>
