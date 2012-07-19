@@ -1,23 +1,34 @@
-<h1>Listing subscribers</h1>
-
-<table>
-  <tr>
-    <th>Email</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @subscribers.each do |subscriber| %>
-  <tr>
-    <td><%= subscriber.email %></td>
-    <td><%= link_to 'Show', subscriber %></td>
-    <td><%= link_to 'Edit', edit_subscriber_path(subscriber) %></td>
-    <td><%= link_to 'Destroy', subscriber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<%- model_class = Subscriber.new.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @subscribers.each do |subscriber| %>
+      <tr>
+        <td><%= link_to subscriber.id, subscriber_path(subscriber) %></td>
+        <td><%= subscriber.email %></td>
+        <td><%=l subscriber.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_subscriber_path(subscriber), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      subscriber_path(subscriber),
+                      :method => :delete,
+                      :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Subscriber', new_subscriber_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_subscriber_path,
+            :class => 'btn btn-primary' %>

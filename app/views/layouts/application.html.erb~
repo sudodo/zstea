@@ -18,7 +18,7 @@
     <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
   </head>
-  <body>
+  <body style="background-color:black;">
 
 <% if false %>
     <div class="navbar navbar-fixed-top">
@@ -45,9 +45,10 @@
     <div class="container">
       <div class="content">
         <div class="row">
-           <div class="span9">
+           <div class="span12">
               <%= yield %>
             </div>
+            <% if false %>
             <div class="span3">
               <div class="well sidebar-nav">
                 <h3>Sidebar</h3>
@@ -59,11 +60,12 @@
                 </ul>
               </div><!--/.well -->
             </div><!--/span-->
+            <% end %>
         </div><!--/row-->
       </div><!--/content-->
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; ZeroStruct 2012</p>
       </footer>
 
     </div> <!-- /container -->

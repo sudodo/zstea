@@ -1,8 +1,6 @@
 <%= form_for @subscriber, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-      <div>
       ZeroStruct News Letter
-      </div>
       <%= f.text_field :email, :class => 'text_field', :placeholder => "your-address@email.com" %>
       <%= f.submit nil, :class => 'btn', :value =>'Subscribe' %>
   </div>

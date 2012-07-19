@@ -1,6 +1,4 @@
-<h1>Editing subscriber</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @subscriber %> |
-<%= link_to 'Back', subscribers_path %>
+<%- model_class = @subscriber.class -%>
+<h1><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
+                                 :default => "Edit #{model_class.model_name.human}") %></h1>
+<%= render :partial => 'form' %>

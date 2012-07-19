@@ -11,6 +11,12 @@
  *= require_self
  *= require_tree .
  */
+body{
+  color: white;
+}
 .row{
-  text-align: center
+  text-align: center;
+}
+footer{
+  text-align: center;
 }

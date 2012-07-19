@@ -1,7 +1,5 @@
 <%- model_class = @subscriber.class -%>
-<h1>
-  <img src="logo.png" alt="ゼロストラクト zerostruct" />
-</h1>
+<h1>ZeroStruct</h1>
 <% if flash[:notice] %>
   <div class="alert alert-success">
     <%= flash[:notice] %>
