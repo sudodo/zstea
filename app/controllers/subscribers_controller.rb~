@@ -47,7 +47,7 @@ class SubscribersController < ApplicationController
       if @subscriber.save
         #format.html { redirect_to @subscriber, notice: 'Subscriber was successfully created.' }
         flash[:notice] = "Registered Successfully!"
-        format.html { render action: "new" }
+        format.html { redirect_to action: "new" }
         format.json { render json: @subscriber, status: :created, location: @subscriber }
       else
         format.html { render action: "new" }

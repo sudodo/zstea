@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "ZstTeaser" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "ZeroStruct ゼロストラクト" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -17,10 +17,25 @@
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
+    <!-- analytics -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33231761-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
   </head>
   <body style="background-color:black;color:white;">
 
-<% if false %>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -29,18 +44,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">ZstTeaser</a>
+<!--<a class="brand" href="/" style="font-size:12px;">株式会社ゼロストラクト</a>-->
+
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to "株式会社ゼロストラクト", "/"  %></li>
+              <li><%= link_to "product", "/product"  %></li>
+              <li><%= link_to "about", "/abouts"  %></li>
+              <li><%= link_to "contact", "/contacts"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-<% end %>
 
     <div class="container">
       <div class="content">
@@ -64,10 +80,11 @@
         </div><!--/row-->
       </div><!--/content-->
 
+<!--
       <footer>
         <p>&copy; ZeroStruct 2012</p>
       </footer>
-
+-->
     </div> <!-- /container -->
 
     <!-- Javascripts

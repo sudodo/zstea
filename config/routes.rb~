@@ -1,5 +1,5 @@
 ZstTeaser::Application.routes.draw do
-  resources :menus, :only => ["index"]
+  resources :menus
 
   resources :abouts, :only => ["index"]
 

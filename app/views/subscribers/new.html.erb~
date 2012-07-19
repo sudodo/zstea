@@ -1,5 +1,8 @@
 <%- model_class = @subscriber.class -%>
-<h1>ZeroStruct</h1>
+<h1>
+  <%= image_tag "logo.png", :alt => "ゼロストラクト zerostruct"  %>
+</h1>
+
 <% if flash[:notice] %>
   <div class="alert alert-success">
     <%= flash[:notice] %>
@@ -7,3 +10,7 @@
 <% end %>
 
 <%= render :partial => 'form' %>
+
+<h3 id="contact">Contact</h3>
+info at zerostruct.co.jp
+
