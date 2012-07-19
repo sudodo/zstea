@@ -3,12 +3,12 @@
   <%= image_tag "logo.png", :alt => "ゼロストラクト zerostruct"  %>
 </h1>
 
-<h3>menu</h3>
+<h2>menu</h2>
 
 
-            <ul class="nav">
-              <li><%= link_to "top", "/"  %></li>
-              <li><%= link_to "product", "/product"  %></li>
-              <li><%= link_to "about", "/abouts"  %></li>
-              <li><%= link_to "contact", "/contacts"  %></li>
-            </ul>
+<ul class="nav">
+  <li><%= link_to "top", "/", :style => "color:#666;"  %></li>
+  <li><%= link_to "product", "/product"  %></li>
+  <li><%= link_to "about", "/abouts"  %></li>
+  <li><%= link_to "contact", "/contacts"  %></li>
+</ul>
