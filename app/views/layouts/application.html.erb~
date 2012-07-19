@@ -45,10 +45,9 @@
     <div class="container">
       <div class="content">
         <div class="row">
-           <div class="span12">
+           <div class="span9">
               <%= yield %>
             </div>
-            <% if false %>
             <div class="span3">
               <div class="well sidebar-nav">
                 <h3>Sidebar</h3>
@@ -60,7 +59,6 @@
                 </ul>
               </div><!--/.well -->
             </div><!--/span-->
-            <% end %>
         </div><!--/row-->
       </div><!--/content-->
 

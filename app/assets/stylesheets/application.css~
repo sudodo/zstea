@@ -12,5 +12,5 @@
  *= require_tree .
  */
 .row{
-  text-align: center;
+  text-align: center
 }

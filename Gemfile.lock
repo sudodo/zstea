@@ -133,6 +133,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
+  less
   rails (= 3.2.6)
   ruby-debug19
   sass-rails (~> 3.2.3)
