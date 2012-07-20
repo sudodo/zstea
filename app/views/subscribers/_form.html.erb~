@@ -1,7 +1,7 @@
 <%= form_for @subscriber, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
       <div>
-        <h3 id="news_letter">ZeroStruct News Letter</h3>
+        <h4 id="news_letter">ZeroStruct News Letter</h4>
       </div>
         <p>
         ゼロストラクトの最新情報はニュースレターでお届けします.
