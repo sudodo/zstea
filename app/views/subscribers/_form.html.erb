@@ -6,16 +6,12 @@
         <p>
         ゼロストラクトの最新情報はニュースレターでお届けします.
         </p>
-<% if false %>
       <div class="input-prepend">
       <span class="add-on" style="color:black;">
         <i class="icon-envelope"></i>
       </span>
-        <%= f.text_field :email, :class => 'text_field', :placeholder => "your-address@email.com", :style => "width:400px" %>
+        <%= f.text_field :email, :class => 'text_field', :placeholder => "your-address@email.com", :style => "" %>
       </div>
-<% end %>
-
-      <%= f.text_field :email, :class => 'text_field', :placeholder => "your-address@email.com", :style => "" %>
       <%= f.submit nil, :class => 'btn btn-warning', :value =>'Subscribe' %>
   </div>
 
