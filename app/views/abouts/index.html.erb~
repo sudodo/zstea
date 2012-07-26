@@ -5,8 +5,8 @@
 	<h1 style="margin:10px;">会社情報</h1>
 
 <h4 style="color:#999999;">会社名</h4>
-<span>株式会社ゼロストラクト<br>
-ZeroStruct Company Limited</span>
+<p>株式会社ゼロストラクト<br>
+ZeroStruct Company Limited</p>
 
 <h4 style="color:#999999;">代表者氏名</h4>
 <p>代表取締役社長　須藤明人</p>
